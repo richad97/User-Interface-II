@@ -48,6 +48,10 @@ nav a {
   margin: 3%;
 }
 
+.main-section img {
+  width: 50%;
+}
+
 .main-section div {
   display: flex;
   flex-direction: column;
@@ -67,7 +71,7 @@ nav a {
 .projects {
   display: flex;
   flex-flow: row wrap;
-  margin: 2% 0;
+  margin: 1% 0;
 }
 
 .projects div {
@@ -110,6 +114,11 @@ footer button {
     flex-direction: column;
   }
 
+  .main-section img {
+    width: 95%;
+    height: 500px;
+  }
+
   header h1 {
     text-align: center;
   }
@@ -147,5 +156,12 @@ footer button {
 
   .main-section div p {
     font-size: 1.2rem;
+  }
+
+  footer h2 {
+    margin: 4% 0;
+  }
+  footer button {
+    margin: 0 30%;
   }
 }
