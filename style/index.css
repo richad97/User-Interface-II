@@ -1,1 +1,167 @@
-/* Add CSS styling here */
+/*CSS Reset*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  border: 0px solid grey;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(58, 58, 58);
+}
+
+header h1 {
+  margin: 1% 2%;
+  color: white;
+}
+
+nav {
+  margin: 0 2%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 1% 2%;
+}
+
+.main-section {
+  height: 500px;
+  display: flex;
+}
+
+.main-section img,
+.main-section div {
+  margin: 3%;
+}
+
+.main-section img {
+  width: 50%;
+}
+
+.main-section div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.main-section div button {
+  width: 50%;
+  font-size: 1.25rem;
+  padding: 1% 0;
+}
+
+.main-section div p {
+  font-size: 1.5rem;
+}
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1% 0;
+}
+
+.projects div {
+  width: 15%;
+  margin: 2% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.295);
+}
+
+.projects div h3 {
+  text-align: center;
+  padding: 2%;
+}
+
+footer {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(58, 58, 58);
+}
+
+footer h2 {
+  text-align: center;
+  margin: 1% 0;
+  color: white;
+  font-size: 1.5rem;
+}
+
+footer button {
+  margin: 0 42%;
+  padding: 1%;
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  .main-section {
+    flex-direction: column;
+  }
+
+  .main-section img {
+    width: 95%;
+    height: 500px;
+  }
+
+  header h1 {
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0%;
+  }
+
+  nav a {
+    padding: 0% 0%;
+    width: 100%;
+    text-align: center;
+    border-radius: 0%;
+    font-size: 1.2rem;
+  }
+
+  .projects {
+    justify-content: space-between;
+  }
+
+  .projects div {
+    width: 25%;
+    margin: 5% 12%;
+  }
+
+  .main-section div h2 {
+    text-align: center;
+  }
+
+  .main-section div button {
+    width: 100%;
+  }
+
+  .main-section div p {
+    font-size: 1.2rem;
+  }
+
+  footer h2 {
+    margin: 4% 0;
+  }
+  footer button {
+    margin: 0 30%;
+  }
+}
